@@ -2,18 +2,23 @@
     width: 300px;
     height: 250px;
     display: inline-block;
+    position: relative;
 }
 
 .front, .back {
     width: 300px;
     height: 250px;
-    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .front {
     background-color: #1c2554;
+    visibility: visible;
 }
 
 .back {
     background-color: #4b4f54;
+    visibility: hidden;
 }
